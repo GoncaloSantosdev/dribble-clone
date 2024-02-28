@@ -1,5 +1,11 @@
+import { Filters } from "../../components";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <Filters />
+    </main>
+  );
 };
 
 export default Home;
