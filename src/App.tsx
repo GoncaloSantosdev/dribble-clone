@@ -1,7 +1,7 @@
 // React Router
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { Home, SignIn, SignUp } from "./pages";
+import { Home, RootLayout, SignIn, SignUp } from "./pages";
 
 const App = () => {
   return (
@@ -10,7 +10,9 @@ const App = () => {
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/sign-up" element={<SignUp />} />
       {/* Root */}
-      <Route path="/" element={<Home />} />
+      <Route element={<RootLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
     </Routes>
   );
 };
