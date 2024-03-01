@@ -1,9 +1,10 @@
-import { Filters } from "../../components";
+import { Categories, Posts } from "../../components";
 
 const Home = () => {
   return (
     <main>
-      <Filters />
+      <Categories />
+      <Posts />
     </main>
   );
 };
