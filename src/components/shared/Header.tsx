@@ -38,9 +38,12 @@ const Header = () => {
             src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           />
 
-          <button className="bg-[#9747FF] text-white px-4 py-2 rounded text-sm">
-            Upload
-          </button>
+          <Link
+            to={"/sign-in"}
+            className="bg-[#9747FF] text-white px-4 py-2 rounded text-sm"
+          >
+            Login
+          </Link>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
 // Auth
+export { default as AuthLayout } from "./_auth/AuthLayout";
 export { default as SignUp } from "./_auth/SignUp";
 export { default as SignIn } from "./_auth/SignIn";
 // Root
