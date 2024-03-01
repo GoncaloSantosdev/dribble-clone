@@ -1,7 +1,7 @@
 // React router
 import { Link } from "react-router-dom";
 // Data
-import { navData } from "../../data";
+import { navLinks } from "../../data";
 // Icons
 import { LuMenu } from "react-icons/lu";
 
@@ -15,7 +15,7 @@ const Header = () => {
             <h1 className="text-2xl ml-4 lg:ml-0">Dribble</h1>
           </Link>
           <nav className="hidden xl:flex gap-8 ml-12">
-            {navData.map((item, index) => (
+            {navLinks.map((item, index) => (
               <li className="list-none" key={index}>
                 <Link to={"/"} className="text-sm">
                   {item.title}
@@ -24,7 +24,7 @@ const Header = () => {
             ))}
           </nav>
         </div>
-        <div className="space-x-6 flex items-center">
+        <div className="space-x-4 flex items-center">
           <span className="text-sm text-[#9747FF] hidden lg:block">
             Apply Now
           </span>
