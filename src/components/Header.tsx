@@ -1,7 +1,7 @@
 // React router
 import { Link } from "react-router-dom";
 // Data
-import { navLinks } from "../../data";
+import { navLinks } from "../data";
 // Icons
 import { LuMenu } from "react-icons/lu";
 
@@ -31,7 +31,7 @@ const Header = () => {
           <input
             type="search"
             placeholder="Search"
-            className="border rounded text-sm px-4 py-2 bg-gray-200 placeholder:text-black w-[180px] hidden md:block"
+            className="border rounded text-sm px-4 py-2 bg-[#E2E5F1] placeholder:text-black w-[180px] hidden md:block"
           />
           <img
             className="w-10 h-10 rounded-full bg-cover cursor-pointer"

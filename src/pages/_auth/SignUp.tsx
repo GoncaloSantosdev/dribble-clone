@@ -80,7 +80,7 @@ const SignUp = () => {
         </form>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Not a member?{" "}
+          Already a member?{" "}
           <Link
             to={"/sign-in"}
             className="font-semibold leading-6 text-[#9747FF]"

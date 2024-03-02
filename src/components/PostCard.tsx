@@ -1,3 +1,5 @@
+// React Router
+import { Link } from "react-router-dom";
 // React Icons
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoEyeOutline } from "react-icons/io5";
@@ -5,11 +7,14 @@ import { IoEyeOutline } from "react-icons/io5";
 const PostCard = () => {
   return (
     <div>
-      <img
-        src="https://images.pexels.com/photos/389818/pexels-photo-389818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="work"
-        className="rounded-xl w-full"
-      />
+      <Link to={"/post/1"}>
+        <img
+          src="https://images.pexels.com/photos/389818/pexels-photo-389818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="work"
+          className="rounded-xl w-full cursor-pointer"
+        />
+      </Link>
+
       <div className="flex items-center justify-between mt-4">
         <div className="flex items-center gap-x-2">
           <img

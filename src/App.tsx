@@ -1,7 +1,14 @@
 // React Router
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { AuthLayout, Home, RootLayout, SignIn, SignUp } from "./pages";
+import {
+  AuthLayout,
+  Home,
+  PostDetails,
+  RootLayout,
+  SignIn,
+  SignUp,
+} from "./pages";
 
 const App = () => {
   return (
@@ -14,6 +21,7 @@ const App = () => {
       {/* Root */}
       <Route element={<RootLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/post/:id" element={<PostDetails />} />
       </Route>
     </Routes>
   );

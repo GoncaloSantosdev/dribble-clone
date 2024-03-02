@@ -5,3 +5,4 @@ export { default as SignIn } from "./_auth/SignIn";
 // Root
 export { default as RootLayout } from "./_root/RootLayout";
 export { default as Home } from "./_root/Home";
+export { default as PostDetails } from "./_root/PostDetails";
