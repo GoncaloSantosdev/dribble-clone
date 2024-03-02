@@ -33,10 +33,12 @@ const Header = () => {
             placeholder="Search"
             className="border rounded text-sm px-4 py-2 bg-[#E2E5F1] placeholder:text-black w-[180px] hidden md:block"
           />
-          <img
-            className="w-10 h-10 rounded-full bg-cover cursor-pointer"
-            src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          />
+          <Link to={"/profile"}>
+            <img
+              className="w-10 h-10 rounded-full bg-cover cursor-pointer"
+              src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+          </Link>
 
           <Link
             to={"/sign-in"}

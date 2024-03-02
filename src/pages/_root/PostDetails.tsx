@@ -7,7 +7,7 @@ import { CiBookmark } from "react-icons/ci";
 const PostDetails = () => {
   return (
     <section className="w-full">
-      <div className="container mx-auto w-full mt-4 px-4 lg:px-0">
+      <div className="container mx-auto w-full mt-8 px-4 lg:px-0">
         {/* USER - TOP */}
         <div className="lg:w-[60%] mx-auto flex flex-col gap-y-8 sm:gap-y-0 sm:flex-row sm:items-center justify-between">
           <div className="flex items-center gap-4">

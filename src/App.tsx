@@ -8,6 +8,7 @@ import {
   RootLayout,
   SignIn,
   SignUp,
+  UserProfile,
 } from "./pages";
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
       <Route element={<RootLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<PostDetails />} />
+        {/* User Profile */}
+        <Route path="/profile" element={<UserProfile />} />
       </Route>
     </Routes>
   );

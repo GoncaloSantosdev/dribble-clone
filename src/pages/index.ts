@@ -6,3 +6,5 @@ export { default as SignIn } from "./_auth/SignIn";
 export { default as RootLayout } from "./_root/RootLayout";
 export { default as Home } from "./_root/Home";
 export { default as PostDetails } from "./_root/PostDetails";
+// User
+export { default as UserProfile } from "./user/UserProfile";
