@@ -13,9 +13,15 @@ import {
   SignUp,
   UserProfile,
 } from "./pages";
+// React Hot Toast
+import { Toaster } from "react-hot-toast";
 
 const queryClient = new QueryClient({
-  defaultOptions: {},
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+    },
+  },
 });
 
 const App = () => {
@@ -38,6 +44,23 @@ const App = () => {
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />
+      <Toaster
+        position="top-center"
+        gutter={12}
+        toastOptions={{
+          success: {
+            duration: 3000,
+          },
+          error: {
+            duration: 5000,
+          },
+          style: {
+            fontSize: "16px",
+            maxWidth: "500px",
+            padding: "16px 24px",
+          },
+        }}
+      />
     </QueryClientProvider>
   );
 };

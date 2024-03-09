@@ -26,3 +26,12 @@ export const getPost = async (postId: any) => {
 
   return data;
 };
+
+export const deletePost = async (postId: any) => {
+  const { error } = await supabase.from("posts").delete().eq("id", postId);
+
+  if (error) {
+    console.error(error);
+    throw new Error("Post could not be loaded");
+  }
+};
