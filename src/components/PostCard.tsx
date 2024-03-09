@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoEyeOutline } from "react-icons/io5";
 
-const PostCard = () => {
+const PostCard = ({ post }) => {
   return (
     <div>
-      <Link to={"/post/1"}>
+      <Link to={`/post/${post.id}`}>
         <img
-          src="https://images.pexels.com/photos/389818/pexels-photo-389818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={post.image}
           alt="work"
           className="rounded-xl w-full cursor-pointer"
         />
@@ -21,7 +21,7 @@ const PostCard = () => {
             className="w-8 h-8 rounded-full bg-cover cursor-pointer"
             src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           />
-          <span className="font-semibold text-sm">Username</span>
+          <span className="font-semibold text-sm">{post.author}</span>
         </div>
         <div className="flex gap-4">
           <div className="flex items-center gap-1">

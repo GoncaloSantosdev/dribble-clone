@@ -1,5 +1,5 @@
 // Components
-import { Button, GithubButton, PostCard } from "../../components";
+import { Button, GithubButton } from "../../components";
 // React Icons
 import { IoIosHeart } from "react-icons/io";
 import { CiBookmark } from "react-icons/ci";
@@ -55,9 +55,10 @@ const PostDetails = () => {
         <hr className="mt-8" />
         {/* RELATED PROJECTS - BOTTOM */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <PostCard />
-          <PostCard />
-          <PostCard />
+          <div>POST</div>
+          <div>POST</div>
+          <div>POST</div>
+          <div>POST</div>
         </div>
       </div>
     </section>
