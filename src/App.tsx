@@ -14,7 +14,9 @@ import {
   UserProfile,
 } from "./pages";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {},
+});
 
 const App = () => {
   return (

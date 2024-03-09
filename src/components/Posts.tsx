@@ -6,7 +6,7 @@ import { getPosts } from "../services/apiPosts";
 import { PostCard } from ".";
 
 const Posts = () => {
-  const { isLoading, data: posts } = useQuery({
+  const { isLoading, data } = useQuery({
     queryKey: ["posts"],
     queryFn: getPosts,
   });
@@ -20,7 +20,7 @@ const Posts = () => {
           </div>
         ) : (
           <>
-            {posts?.map((post) => (
+            {data?.map((post) => (
               <PostCard post={post} key={post.id} />
             ))}
           </>
